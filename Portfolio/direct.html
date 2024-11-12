@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background-color: #000;
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            z-index: -1;
+            /* opacity: 1; */
+        }
+
+        .main {
+            /* font-family: Arial, Helvetica, sans-serif; */
+            background-color: #1d1b1b;
+            /* border: solid white 5px; */
+            color: white;
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            position: fixed;
+            right: 685px;
+            top: 358px;
+        }
+
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding: 8px;
+            background-color: darkgrey;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .button {
+            font-size: medium;
+            font-weight: bold;
+            background-color: rgb(31, 106, 175);
+            color: #000;
+            padding: 7px;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: rgb(170, 28, 28);
+        }
+
+        .name {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: xx-large;
+            width: 580px;
+            position: relative;
+            left: 795px;
+            bottom: 250px;
+        }
+
+        h1 {
+            color: rgb(122, 189, 22);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* color: white;    */
+        }
+
+        .span {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+            font-weight: bold;
+            position: relative;
+            left: 165px;
+            color: white;
+        }
+
+        .A {
+            width: 700px;
+            position: relative;
+            top: 235px;
+            color: white;
+            right: 300px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(235, 235, 13);
+        }
+
+        .P {
+            top: 1px;
+            position: relative;
+            left: 650px;
+        }
+
+        .Games {
+            z-index: +1;
+            display: flex;
+            justify-content: right;
+            flex-direction: column;
+            position: relative;
+            left: 280PX;
+            bottom: 250px;
+            border: transparent;
+            border-radius: 15px;
+            border-width: 3px;
+            background-color: white;
+            opacity: 0.3;
+            transition: 0.6s;
+        }
+
+        .Games:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .B {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-weight: bold;
+        }
+
+        .C {
+            border-radius: 12px;
+        }
+
+        .Games1 {
+            z-index: +1;
+            display: flex;
+            justify-content: right;
+            flex-direction: column;
+            position: relative;
+            right: 60px;
+            top: 9px;
+            border: transparent;
+            border-radius: 15px;
+            border-width: 3px;
+            background-color: white;
+            opacity: 0.3;
+            transition: 0.6s;
+        }
+
+        .Games1:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .D {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            border-radius: 3px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .E {
+            border-radius: 12px;
+        }
+
+        .Games2 {
+            z-index: +1;
+            display: flex;
+            justify-content: right;
+            flex-direction: column;
+            position: relative;
+            right: 400px;
+            top: 32vh;
+            border: transparent;
+            border-radius: 15px;
+            border-width: 3px;
+            background-color: white;
+            opacity: 0.3;
+            transition: 0.6s;
+        }
+
+        .Games2:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .F {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            border-radius: 12px;
+        }
+
+        .G {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+
+
+
+        .sk {
+            position: relative;
+            left: 358px;
+            height: 845px;
+            top: 0px;
+            background-color: #1b1a1a;
+            padding: 8px;
+        }
+
+        .spp {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .list {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            color: white;
+            padding: 0PX;
+            margin: 3PX;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: white;
+            display: flex;
+            justify-content: left;
+        }
+
+        .pp {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: white;
+            display: flex;
+            justify-content: left;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="./images/Audio1.mp3" autoplay loop></audio>
+    <div class="sk">
+        <img src="./images/Ghost_codm-removebg-preview.png" width="150px" alt="">
+        <span class="spp">More games</span>
+        <div class="list">
+            <ul>
+                <li> <a href="https://www.callofduty.com/warzone" target="_blank">COD Warzone</a> </li>
+                <li> <a href="https://www.callofduty.com/modernwarfare" target="_blank">COD MW</a> </li>
+                <li> <a href="https://www.activision.com/games/call-of-duty/call-of-duty-black-ops" target="_blank">COD
+                        Black ops</a> </li>
+                <li> <a href="https://www.activision.com/games/call-of-duty/call-of-duty-black-ops-2"
+                        target="_blank">COD Black ops II</a> </li>
+                <li> <a href="https://www.callofduty.com/blackops4/pc" target="_blank">COD black ops IIII</a> </li>
+                <li> <a href="https://www.activision.com/games/call-of-duty/call-of-duty-black-ops-cold-war"
+                        target="_blank">COD black ops Cold War</a> </li>
+                <li> <a href="https://www.callofduty.com/blackops6" target="_blank">COD Black ops 6</a> </li>
+                <li> <a href="https://www.ea.com/games/battlefield/battlefield-1" target="_blank">battlefield-1</a>
+                </li>
+                <li> <a href="https://www.ea.com/games/battlefield?2" target="_blank">Battlefield-2</a> </li>
+                <li> <a href="https://www.ea.com/games/battlefield/%20battlefield-4" target="_blank">Battlefield-4</a>
+                </li>
+                <li> <a href="https://www.ea.com/games/battlefield/battlefield-5/about"
+                        target="_blank">Battlefield-5</a> </li>
+                <li> <a href="https://www.ubisoft.com/en-us/game/far-cry/far-cry-3" target="_blank">FAR CRY III</a>
+                </li>
+                <li> <a href="https://www.ubisoft.com/en-us/game/far-cry/far-cry-4" target="_blank">FAR CRY IV</a> </li>
+                <li> <a href="https://www.ubisoft.com/en-us/game/far-cry/far-cry-5" target="_blank">FAR CRY V</a> </li>
+                <li> <a href="https://www.ubisoft.com/en-us/game/far-cry/far-cry-6" target="_blank">FAR CRY VI</a> </li>
+                <li> <a href="https://www.playstation.com/en-in/games/the-last-of-us-part-i/" target="_blank">The Last
+                        of Us-I</a> </li>
+            </ul>
+        </div>
+        <h4>Contact details :</h4>
+        <p class="pp">☎️ 1234567890</p>
+        <p class="pp">📧 xyz123@gmail.com</p>
+        <p class="pp">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <div class="container">
+        <div class="name">
+            <h1>SILICON SOILDERS</h1>
+            <span class="span">VICTORY AWAITS</span>
+        </div>
+    </div>
+    <video src="./images/Video.mp4" autoplay muted loop></video>
+    <div class="main">
+        <h2>Login</h2>
+        <form action="">
+            <input type="Email or user name" placeholder="Email or user name">
+            <input type="Password" name="" id="" placeholder="Password">
+            <button class="button" type="submit">Login</button>
+        </form>
+    </div>
+    <div class="P">
+        <div class="A">
+            <p>Don't have an account? <a href="https://www.activision.com/" target="_blank">Register</a> </p>
+        </div>
+    </div>
+
+    <div class="Games">
+        <a href="https://www.callofduty.com/store/games/modernwarfare2" target="_blank"><img class="C" src="./images/MW.jpeg"
+                width="340px" alt=""> </a>
+        <span class="B">Call of Duty MW II</span>
+    </div>
+    <div class="Games1">
+        <a href="https://www.callofduty.com/modernwarfare3" target="_blank"><img class="E" src="./images/3.jpeg" width="340px"
+                alt=""></a>
+        <span class="D">Call of Duty MW III</span>
+    </div>
+    <div class="Games2">
+        <a href="https://www.activision.com/games/call-of-duty/call-of-duty-black-ops-3" target="_blank"><img class="F"
+                src="./images/BLACK OPPS.jpeg" width="340px" alt=""></a>
+        <span class="G">Call of Duty Black ops III</span>
+    </div>
+</body>
+
+</html>
