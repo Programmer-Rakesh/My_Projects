@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label for="number">
+            number
+            <input type="number" name="number" id="a">
+            <button onclick="yeah()" type="submit">Go</button>
+            <input type="text" name="Result" id="f">
+            <p id="umm" class="w-100" ></p>
+        </label>
+    </div>
+
+    <script>
+        function yeah() {
+        let Okay = document.getElementById("a").value;
+        let f = document.getElementById("f");
+        let pp = document.getElementById("umm")
+
+        let img = document.createElement("img");
+        img.width = 100;
+        
+
+            if ( Okay<12){
+                f.value ="yeh";
+                img.src = "./images/B1 lancer.jpg"
+            }
+            else{
+                f.value = "go daddy";
+                img.src ="B2 spirit.jpg"
+            }  
+
+            // img.onload = function () { 
+            //     console.log('Image loaded successfully'); 
+            // } 
+            // img.onerror = function () { 
+            //     console.error('Error loading image'); 
+            //     pp.innerHTML = "Image failed to load. Please check the URL."; 
+            //     return; }
+
+            pp.innerHTML = "";
+            pp.appendChild(img);
+        }
+    </script>
+</body>
+</html>
