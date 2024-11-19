@@ -1,0 +1,141 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px transparent;
+    border-radius: 10px;
+    width: 25%;
+    margin: 0 auto;
+    height: 630px;
+    background-color: #274D60;
+    /* background-color: rgba(101, 149, 165, 0.151); */
+    /* backdrop-filter: blur(10px); */
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 36px;
+    
+}
+
+.input{
+    color: rgb(0, 0, 0);
+    padding: 9px;
+    width: 70%;
+    border-radius: 5px;
+    /* background-color: rgba(255, 228, 225, 0.3);
+    backdrop-filter: blur(10px); */
+    background-color: rgba(175, 238, 238, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    /* font-weight: bold; */
+    font-size: 15px
+}
+.input::placeholder,
+.date::placeholder,
+.text::placeholder {
+    color: rgb(255, 255, 255);
+    /* White with opacity */
+}
+.date{
+    font-size: 15px;
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #274D60 ;
+    color: white;
+}
+.text{
+    width: 70%;
+    padding: 9px;
+    border: solid transparent 1px;
+    border-radius: 5px;
+    height: 120px;
+    background-color: rgba(175, 238, 238, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    outline: none;
+    /* font-weight: bold; */
+    font-size: 15px
+}
+
+.b1{
+    padding: 6px;
+    width: 130px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color:#128812;
+    font-weight: bolder;
+    font-size: 15px;
+    position: relative;
+    top: 13%;
+    cursor: pointer;
+}
+
+.b1:hover{
+    background-color: rgba(28, 145, 17, 0.199);
+}
+.b2 {
+    padding: 5px;
+    width: 110px;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    background-color: #a3121e ;
+    font-weight: bolder;
+    font-size: 15px;
+    position: relative;
+    position: relative;
+    bottom: 2%;
+    cursor: pointer;
+}
+.b2:hover{
+    background-color: rgba(255, 0, 0, 0.199);
+}
+
+@media(max-width:555px){
+    .container{
+        width: 85%;
+        height: 660px;
+    }
+    .input{
+        width: 85%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    .date{
+        width: 45%;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .text{
+        width: 85%;
+        font-size: 14px;
+        padding: 14px;
+    }
+    .b1,
+    .b2{
+        width: 40%;
+        padding: 6px;
+        font-size: 17px;
+    }
+ }
