@@ -1,0 +1,271 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    z-index: -1;
+    /* opacity: 1; */
+}
+
+.main {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: #1d1b1b;
+    /* border: solid white 5px; */
+    color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    right: 685px;
+    top: 358px;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: darkgrey;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.button {
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(31, 106, 175);
+    color: #000;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: rgb(170, 28, 28);
+}
+
+.name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    width: 580px;
+    position: relative;
+    left: 795px;
+    bottom: 250px;
+}
+
+h1 {
+    color: rgb(122, 189, 22);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: white;    */
+}
+
+.span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+    left: 165px;
+    color: white;
+}
+
+.A {
+    width: 700px;
+    position: relative;
+    top: 235px;
+    color: white;
+    right: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(235, 235, 13);
+}
+
+.P {
+    top: 1px;
+    position: relative;
+    left: 650px;
+}
+
+.Games {
+    z-index: +1;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    position: relative;
+    left: 280PX;
+    bottom: 250px;
+    border: transparent;
+    border-radius: 15px;
+    border-width: 3px;
+    background-color: white;
+    opacity: 0.3;
+    transition: 0.6s;
+}
+
+.Games:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 2;
+}
+
+.B {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.C {
+    border-radius: 12px;
+}
+
+.Games1 {
+    z-index: +1;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    position: relative;
+    right: 60px;
+    top: 9px;
+    border: transparent;
+    border-radius: 15px;
+    border-width: 3px;
+    background-color: white;
+    opacity: 0.3;
+    transition: 0.6s;
+}
+
+.Games1:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 2;
+}
+
+.D {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-radius: 3px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.E {
+    border-radius: 12px;
+}
+
+.Games2 {
+    z-index: +1;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    position: relative;
+    right: 400px;
+    top: 32vh;
+    border: transparent;
+    border-radius: 15px;
+    border-width: 3px;
+    background-color: white;
+    opacity: 0.3;
+    transition: 0.6s;
+}
+
+.Games2:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 2;
+}
+
+.F {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-radius: 12px;
+}
+
+.G {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+
+.sk {
+    position: relative;
+    left: 358px;
+    height: 845px;
+    top: 0px;
+    background-color: #1b1a1a;
+    padding: 8px;
+}
+
+.spp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    padding: 0PX;
+    margin: 3PX;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+
+.pp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+    display: flex;
+    justify-content: left;
+}
